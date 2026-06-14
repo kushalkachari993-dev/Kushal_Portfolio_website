@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 24% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 24% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 24% 12%;
+
+    --primary: 173 65% 30%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 173 55% 38%;
+
+    --secondary: 214 32% 92%;
+    --secondary-foreground: 220 24% 12%;
+
+    --muted: 214 32% 94%;
+    --muted-foreground: 218 12% 42%;
+
+    --accent: 20 82% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 22% 84%;
+    --input: 215 22% 84%;
+    --ring: 173 65% 30%;
+
+    --radius: 0.5rem;
+
+    --gradient-hero: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(214 32% 94%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(214 32% 97%) 100%);
+    --gradient-text: linear-gradient(135deg, hsl(220 24% 12%) 0%, hsl(220 14% 36%) 100%);
+
+    --shadow-glow: 0 10px 28px -18px hsl(var(--primary) / 0.45);
+    --shadow-card: 0 1px 2px hsl(220 24% 12% / 0.06), 0 12px 32px -28px hsl(220 24% 12% / 0.28);
+    --shadow-elegant: 0 16px 40px -30px hsl(220 24% 12% / 0.38);
+
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+    background-image: linear-gradient(180deg, hsl(var(--background)), hsl(214 32% 96%));
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-primary { background-image: var(--gradient-primary); }
+  .bg-gradient-accent { background-image: var(--gradient-accent); }
+  .bg-gradient-card { background-image: var(--gradient-card); }
+  .text-gradient {
+    background-image: var(--gradient-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-soft {
+    background-image: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-card { box-shadow: var(--shadow-card); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .transition-smooth { transition: var(--transition-smooth); }
+
+  .glass {
+    background: hsl(0 0% 100% / 0.78);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  .grid-pattern {
+    background-image:
+      linear-gradient(hsl(var(--border) / 0.6) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.6) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to bottom, black, transparent 80%);
+  }
+}
