@@ -13,7 +13,7 @@ npm run dev
 ## Vercel settings
 
 - Framework Preset: Vite
-- Install Command: npm ci --no-audit --no-fund
+- Install Command: corepack enable && pnpm install --frozen-lockfile
 - Build Command: npm run build
 - Output Directory: dist
 
