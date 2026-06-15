@@ -79,7 +79,7 @@ npm run test
 Recommended Vercel settings:
 
 - Framework Preset: Vite
-- Install Command: `npm install`
+- Install Command: `npm ci --no-audit --no-fund`
 - Build Command: `npm run build`
 - Output Directory: `dist`
 
