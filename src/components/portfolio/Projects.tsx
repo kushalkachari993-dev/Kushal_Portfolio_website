@@ -36,6 +36,16 @@ const projects: ProjectCardProps[] = [
     accent: "from-indigo-500/30 to-sky-500/30",
   },
   {
+    title: "AI Software Architect",
+    summary: "Transforms requirements and user stories into validated architecture packages with diagrams, database schemas, API designs, deployment plans, cost estimates, and generated starter artifacts.",
+    tech: ["FastAPI", "Pydantic", "OpenAI", "PostgreSQL", "Terraform"],
+    liveUrl: "https://ai-architect-neon.vercel.app",
+    githubUrl: "https://github.com/kushalkachari993-dev/AI-architect",
+    videoUrl: "https://drive.google.com/drive/folders/17Q7vox2yn4I-9vaImm1s-jum5-ONYhVj",
+    screenshotsUrl: "https://drive.google.com/drive/folders/1KwGjNdnIyi9sVnUDLd5Pa05WI_t1POmS",
+    accent: "from-cyan-500/30 to-emerald-500/30",
+  },
+  {
     title: "ResumeLink AI",
     summary: "Upload a resume, review optional identity fields, and generate a public link recruiters can chat with. The assistant answers from the resume context, not from generic guesses.",
     tech: ["RAG", "Resume Parsing", "Conversational AI", "React", "Vercel"],
