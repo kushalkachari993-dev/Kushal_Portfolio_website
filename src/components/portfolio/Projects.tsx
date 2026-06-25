@@ -26,6 +26,16 @@ const projects: ProjectCardProps[] = [
     accent: "from-blue-500/30 to-cyan-500/30",
   },
   {
+    title: "AI Interviewer Platform",
+    summary: "Adaptive multi-agent interview platform with Resume, Coding, System Design, HR, and Evaluation agents, voice interaction, candidate scorecards, and hiring recommendations.",
+    tech: ["FastAPI", "React", "OpenAI", "Multi-Agent AI", "Voice API"],
+    liveUrl: "https://ai-interviewer-qtga.vercel.app/",
+    githubUrl: "https://github.com/kushalkachari993-dev/ai-interviewer",
+    videoUrl: "#",
+    screenshotsUrl: "https://drive.google.com/drive/folders/1eN9gXENj9wpx__pIFmUyO8jOQLAGsyo3",
+    accent: "from-indigo-500/30 to-sky-500/30",
+  },
+  {
     title: "ResumeLink AI",
     summary: "Upload a resume, review optional identity fields, and generate a public link recruiters can chat with. The assistant answers from the resume context, not from generic guesses.",
     tech: ["RAG", "Resume Parsing", "Conversational AI", "React", "Vercel"],
