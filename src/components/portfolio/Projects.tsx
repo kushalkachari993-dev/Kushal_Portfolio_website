@@ -46,16 +46,6 @@ const projects: ProjectCardProps[] = [
     accent: "from-emerald-500/30 to-teal-500/30",
   },
   {
-    title: "Stock Picker Agent",
-    summary: "Multi-agent stock research assistant for discovering, comparing, and reasoning about potential investment candidates.",
-    tech: ["CrewAI", "Python", "Finance", "Agents", "LLMs"],
-    liveUrl: "#",
-    githubUrl: "#",
-    videoUrl: "#",
-    screenshotsUrl: "#",
-    accent: "from-amber-500/30 to-orange-500/30",
-  },
-  {
     title: "Personal MCP Server",
     summary: "Deployed a personal MCP server on Fly.io for future AI assistant workflows, tool access, and reusable automation experiments.",
     tech: ["MCP", "Fly.io", "Docker", "Python", "Automation"],
